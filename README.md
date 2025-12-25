@@ -67,14 +67,9 @@ Displays processed video in real time
 Project Structure
 face-privacy-filter-opencv/
 │
-├── privacy_filter.py
+├── main.py
 ├── README.md
 ├── requirements.txt
-└── .gitignore
-
-requirements.txt
-opencv-python
-numpy
 
 
 Use Cases
