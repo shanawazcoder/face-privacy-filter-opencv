@@ -4,7 +4,7 @@ A real-time face privacy filter that detects faces from a webcam feed and applie
 
 ---
 
-## 🚀 Features
+ Features
 
 - Real-time face detection using Haar Cascade
 - Blur and Pixelation modes
@@ -16,7 +16,7 @@ A real-time face privacy filter that detects faces from a webcam feed and applie
 
 ---
 
-## 🛠 Technologies Used
+Technologies Used
 
 - Python 3.x
 - OpenCV
@@ -24,10 +24,67 @@ A real-time face privacy filter that detects faces from a webcam feed and applie
 
 ---
 
-## 📦 Installation
+ Installation
 
-### 1. Clone the repository
+1. Clone the repository
 
-```bash
+bash
 git clone https://github.com/shanawazcoder/face-privacy-filter-opencv.git
 cd face-privacy-filter-opencv
+
+2. Install dependencies
+pip install opencv-python numpy
+
+Usage
+
+Run with default settings:
+
+python privacy_filter.py
+
+
+Run with custom mode and strength:
+
+python privacy_filter.py --mode blur --strength 25
+
+Keyboard Controls
+Key	Action
+P	Toggle Blur / Pixelate
++	Increase filter strength
+-	Decrease filter strength
+Q	Quit application
+ How It Works
+
+Captures video frames from webcam
+
+Converts frames to grayscale
+
+Detects faces using Haar Cascade
+
+Applies blur or pixelation to detected faces
+
+Displays processed video in real time
+
+Project Structure
+face-privacy-filter-opencv/
+│
+├── privacy_filter.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+
+requirements.txt
+opencv-python
+numpy
+
+
+Use Cases
+
+Webcam privacy protection
+
+Public video anonymization
+
+Computer vision practice
+
+CCTV or monitoring prototypes
+
+YouTube or streaming face hiding
